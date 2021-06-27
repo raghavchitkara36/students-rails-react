@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "antd": "^4.16.5"
+  },
+  "name": "student_package",
+  "version": "1.0.0",
+  "description": "students_package",
+  "main": "index.js",
+  "repository": "https://github.com/yarnpkg/example-yarn-package",
+  "author": "Yarn Contributor",
+  "license": "MIT",
+  "scripts": {
+    "build": "cd client && yarn install && yarn build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
+  },
+
+}
