@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: student_rails_api_production
-  username: student_rails_api
+  username: fpbtlgudiaozte
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
