@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+* System dependencies: 
+  node.js version : v10.24.1 
+  npm
+  Yarn package manager version: 1.22.10
+  
+* Ruby version : 2.6.7p197 (2021-04-05 revision 67941)
 
-* Ruby version
+* Rails version: 6.0.4
 
-* System dependencies
+* Postgresql
 
-* Configuration
+* create-react-app
 
-* Database creation
+* Database creation 
+  rails db:create
 
-* Database initialization
+* Database migration
+ rails db:migrate
 
-* How to run the test suite
+* How to run
+rails server -p 3001
+rails db:seed
+yarn --cwd student-app start
 
-* Services (job queues, cache servers, search engines, etc.)
+* Go to localhost:3000 and find the application running.
 
-* Deployment instructions
+* Go to localhost:3001/mystudents and find the data in JSON format.
 
-* ...
+

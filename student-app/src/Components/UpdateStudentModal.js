@@ -47,13 +47,7 @@ class UpdateStudentModal extends React.Component {
       visible: false,
     });
   };
-//   componentDidMount(){
-//       // if item exists, populate the state with proper data
-//       if(this.props.item){
-//         const { id,roll_number, name, email, phone } = this.props.item
-//         this.setState({ id,roll_number, name, email, phone  })
-//       }
-//     }
+
   render() {
     return (
       <>
