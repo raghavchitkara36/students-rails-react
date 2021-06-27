@@ -14,16 +14,19 @@
 
 * create-react-app
 
-* Database creation 
+* clone the repository and move into the root directory of project
+
+* Database creation  -> 
   rails db:create
 
-* Database migration
+* Database migration -> 
  rails db:migrate
 
-* How to run
-rails server -p 3001
-rails db:seed
-yarn --cwd student-app start
+* Run below mentioned commands
+ 
+* rails server -p 3001
+* rails db:seed
+* yarn --cwd student-app start
 
 * Go to localhost:3000 and find the application running.
 
