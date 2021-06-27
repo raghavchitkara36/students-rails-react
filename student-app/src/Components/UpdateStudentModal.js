@@ -12,7 +12,7 @@ class UpdateStudentModal extends React.Component {
 
   onFinish = (values) => {
     console.log('responseid', values.id, values.roll_number);
-    const url = "/mystudents/${e.id}";
+    const url = "/mystudents/${values.roll_number}";
     fetch(url, {
       method: "put",
       headers: {

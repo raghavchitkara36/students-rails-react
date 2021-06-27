@@ -77,9 +77,9 @@ test:
 #
    production:
      url: postgres://fpbtlgudiaozte:764d79e01f45f21b7660fd66e0511f6d58826643679fa22855fdc21e959bab49@ec2-35-169-188-58.compute-1.amazonaws.com:5432/d38gsdhqfse7es
-#
+
 production:
   <<: *default
-  database: d38gsdhqfse7es
-  username: fpbtlgudiaozte
-  password: 764d79e01f45f21b7660fd66e0511f6d58826643679fa22855fdc21e959bab49
+  database: student_rails_api_production
+  username: student_rails_api
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
