@@ -11,8 +11,8 @@ class UpdateStudentModal extends React.Component {
   };
 
   onFinish = (values) => {
-    console.log('responseid', values.id, values.roll_number);
-    const url = "/mystudents/${values.roll_number}";
+    console.log('responseid', values.id, values.roll_number, this.props.id, values);
+    const url = "/mystudents/"+ this.props.id;
     fetch(url, {
       method: "put",
       headers: {
@@ -30,7 +30,7 @@ class UpdateStudentModal extends React.Component {
         throw new Error("Network error.");
       })
       .then(() => {
-        this.props.setState();
+        //this.props.setState();
         this.props.reloadStudents();
       })
       .catch((err) => console.error("Error: " + err));
@@ -47,13 +47,13 @@ class UpdateStudentModal extends React.Component {
       visible: false,
     });
   };
-   componentDidMount(){
-       // if item exists, populate the state with proper data
-       if(this.props.item){
-         const { id,roll_number, name, email, phone } = this.props.item
-         this.setState({ id,roll_number, name, email, phone  })
-       }
-     }
+//   componentDidMount(){
+//       // if item exists, populate the state with proper data
+//       if(this.props.item){
+//         const { id,roll_number, name, email, phone } = this.props.item
+//         this.setState({ id,roll_number, name, email, phone  })
+//       }
+//     }
   render() {
     return (
       <>

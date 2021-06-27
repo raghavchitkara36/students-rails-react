@@ -47,7 +47,7 @@ class MyStudentContainer extends Component {
           title: "",
           key: "action",
           render: (_text, record) => (
-            <UpdateStudentModal reloadStudents={this.reloadStudents} />
+            <UpdateStudentModal  id={record.id} reloadStudents={this.reloadStudents} />
           ),
         },
     ];
