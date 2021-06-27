@@ -6,13 +6,16 @@
   "version": "1.0.0",
   "description": "students_package",
   "main": "index.js",
-  "repository": "https://github.com/yarnpkg/example-yarn-package",
-  "author": "Yarn Contributor",
+  "repository": {
+    "url": "https://github.com/raghavchitkara36/students-rails-react.git",
+    "type": "git"
+  },
+  "author": "Raghav Chitkara",
   "license": "MIT",
   "scripts": {
-    "build": "cd client && yarn install && yarn build && cd ..",
-    "deploy": "cp -a client/build/. public/",
-    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
-  },
+    "build": "cd student-app && yarn install && yarn build && cd ..",
+    "deploy": "cp -a student-app/build/. public/",
+    "postinstall": "yarn build && yarn deploy && echo 'Client student-app built!'"
+  }
 
 }
